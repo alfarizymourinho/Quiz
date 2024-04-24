@@ -21,6 +21,10 @@ Route::get('/', function () {
     return Inertia('Home');
 });
 
+Route::get('/quiz', function () {
+    return Inertia('Quiz');
+});
+
 Route::get('/questions',[QuestionController::class,'index'])->name('questions');
 Route::post('/questions',[QuestionController::class,'store']);
 Route::put('/questions',[QuestionController::class,'update']);

@@ -10,7 +10,7 @@ const props = defineProps({
       <div class="modal-container">
         <div class="modal-header">
           <slot name="header">default header</slot>
-          
+
         </div>
 
         <div class="modal-body">
@@ -21,10 +21,7 @@ const props = defineProps({
         <div class="modal-footer">
           <slot name="footer">
             default footer
-            <button
-              class="modal-default-button"
-              @click="$emit('close')"
-            >OK</button>
+            <button class="modal-default-button" @click="$emit('close')">OK</button>
           </slot>
         </div>
       </div>
